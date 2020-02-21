@@ -1,0 +1,88 @@
+h1 {
+  transform: translateX(-200px);
+}
+
+h2 {
+  transform: rotate(50deg) translate(100px, 100px);
+}
+
+h3 {
+}
+
+/* div {
+    background: red;
+    height: 100px;
+    width: 100px;
+    transform: translateY(50px) translateX(50px) rotateZ(45deg);
+  } */
+
+section {
+  background: green;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  /* transition: transform 0.3s ease-in-out; */
+  /* transition: transform 1s, background 10s; */
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+section:hover {
+  transform: scale(1.2);
+  width: 400px;
+  background: blue;
+}
+
+/* @keyframes colorChange {
+    from {
+      background-color: green;
+    }
+    to {
+      background-color: pink;
+    }
+  } */
+
+@keyframes colorChange {
+  10% {
+    background: blue;
+  }
+
+  50% {
+    background: red;
+  }
+  65% {
+    background: orange;
+  }
+
+  82% {
+    background: black;
+  }
+
+  100% {
+    background: peru;
+  }
+}
+nav {
+  width: 70vw;
+  height: 20vh;
+  margin: 20px auto;
+  background-color: indigo;
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
